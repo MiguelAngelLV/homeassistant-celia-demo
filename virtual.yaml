@@ -1,0 +1,33 @@
+version: 1
+devices:
+ Enchufe:
+  - platform: switch
+    name: 'Enchufe Inteligente'
+    initial_value: 'off'
+
+ Temperatura:
+  - platform: sensor
+    name: Temperatura
+    initial_value: '22'
+    class: temperature
+  - platform: sensor
+    name: Humedad
+    initial_value: '50'
+    class: humidity
+
+ Lámpara 1:
+  - platform: light
+    name: 'Lámpara 1'
+    initial_value: 'off'
+    support_brightness: true
+    initial_brightness: 100
+    support_color: true
+
+ Lámpara 2:
+  - platform: light
+    name: 'Lámpara 2'
+    initial_value: 'off'
+    support_brightness: true
+    initial_brightness: 100
+    support_color: true
+
